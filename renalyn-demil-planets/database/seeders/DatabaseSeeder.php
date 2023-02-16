@@ -19,14 +19,16 @@ class DatabaseSeeder extends Seeder
         $faker = Faker::create();
         $gender = $faker->randomElement(['male', 'female']);
         foreach (range(1,200) as $index) {
-            DB::table('iphones')->insert([
-                'model' => $faker->name,
-                'released' => $faker->text,
-                'discontinued' => $faker->text,
-                'capacities' => $faker->text,
-                'processor' => $faker->text,
-                'os' => $faker->text
+            DB::table('planets')->insert([
+                'name' => $faker->name,
+                'discovery_year' => $faker->text,
+                'distance_from_sun' => $faker->text,
+                'surface_area' => $faker->text,
+                'rotation_period' => $faker->text,
+                'number_of_moons' => $faker->text
             ]);
         }
     }
 } 
+
+ 

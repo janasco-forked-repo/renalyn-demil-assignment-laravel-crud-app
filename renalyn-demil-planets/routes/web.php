@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\iPhoneAjaxController;
+use App\Http\Controllers\PlanetAjaxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('iphones', iPhoneAjaxController::class);
+Route::resource('planets', PlanetAjaxController::class);

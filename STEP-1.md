@@ -4,7 +4,7 @@
 
 > Run your xampp and start mysql and apache
 
-> Create database in your phpadmin like (laravel_ajaxcrud_sarahmay)
+> Create database in your phpadmin like (laravel_ajaxcrud_renalyn)
 
 > Import the backup database
 
