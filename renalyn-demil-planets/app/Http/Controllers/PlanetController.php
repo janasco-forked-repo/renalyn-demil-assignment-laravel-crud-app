@@ -13,7 +13,7 @@ class PlanetController extends Controller
         return view('index');
     }
 
-    // handle fetch all eamployees ajax request
+    // handle fetch all planets ajax request
     public function read() {
         $plnets_fetch = Planet::all();
         $output = '';
