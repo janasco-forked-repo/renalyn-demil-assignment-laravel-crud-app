@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\PlanetController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PlanetAjaxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -9,14 +9,14 @@ use App\Http\Controllers\PlanetAjaxController;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
  
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::resource('planets', PlanetAjaxController::class);
+Route::get('/', [PlanetController::class, 'index']);
+Route::post('/create', [PlanetController::class, 'create'])->name('create');
+Route::get('/read', [PlanetController::class, 'read'])->name('read');
+Route::post('/update', [PlanetController::class, 'update'])->name('update');
+Route::delete('/delete', [PlanetController::class, 'delete'])->name('delete');
+Route::get('/edit', [PlanetController::class, 'edit'])->name('edit');

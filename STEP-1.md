@@ -6,7 +6,7 @@
 
 > Create database in your phpadmin like (laravel_ajaxcrud_renalyn)
 
-> Import the backup database
+> Import the backup database (can be found at: /database/backup/laravel_ajaxcrud_renalyn.sql)
 
 > Then download the source-code from github
 

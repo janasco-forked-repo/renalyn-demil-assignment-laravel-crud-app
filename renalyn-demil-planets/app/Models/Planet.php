@@ -9,13 +9,13 @@ class Planet extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'planetname',
+        'planet_image',
+        'planet_name',
         'discovery_year',
         'distance_from_sun',
         'surface_area',
         'rotation_period',
-        'number_of_moons', 
-    ];   
+        'number_of_moons'
+    ];
 }
-
-
+ 
